@@ -1,0 +1,44 @@
+{
+  "id": "1848327",
+  "name": "iconObj",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1915205",
+      "name": "数据统计",
+      "font_class": "icon-test",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "1964580",
+      "name": "订单管理",
+      "font_class": "dingdanguanli",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    },
+    {
+      "icon_id": "5829528",
+      "name": "权限管理",
+      "font_class": "wulumuqishigongandashujuguanlipingtai-ico-",
+      "unicode": "e7f2",
+      "unicode_decimal": 59378
+    },
+    {
+      "icon_id": "6866628",
+      "name": "用户管理",
+      "font_class": "yonghuguanli",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "10704946",
+      "name": "商品管理",
+      "font_class": "shangpinguanlix",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}
