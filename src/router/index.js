@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 
 import Welcome from "../views/home/childrenComps/Welcome.vue"
 import Users from "../views/user/Users"
+import Rights from "../views/power/Rights"
+import Roles from "../views/power/Roles"
 
 // 路由懒加载
 const Login = () => import("../views/login/Login.vue")
@@ -29,6 +31,14 @@ const routes = [{
 			{
 				path: "/users",
 				component: Users
+			},
+			{
+				path: "/rights",
+				component: Rights
+			},
+			{
+				path: "/roles",
+				component: Roles
 			}
 		]
 	},
