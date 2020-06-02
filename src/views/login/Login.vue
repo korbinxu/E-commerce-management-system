@@ -66,7 +66,7 @@ export default {
         // this.$http.post('login', this.loginForm): 返回值为promise
         // 返回值为promise，可加await简化操作 相应的也要加async
         const { data: res } = await this.$http.post("login", this.loginForm);
-        console.log(res);
+        // console.log(res);
         if (res.meta.status !== 200) return this.$message.error("登录失败");
         this.$message.success("登录成功");
         // 1、将登陆成功之后的token, 保存到客户端的sessionStorage中; localStorage中是持久化的保存

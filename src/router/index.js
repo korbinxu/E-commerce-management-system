@@ -5,6 +5,7 @@ import Welcome from "../views/home/childrenComps/Welcome.vue"
 import Users from "../views/user/Users"
 import Rights from "../views/power/Rights"
 import Roles from "../views/power/Roles"
+import Cate from '../views/goods/Cate';
 
 // 路由懒加载
 const Login = () => import("../views/login/Login.vue")
@@ -39,7 +40,11 @@ const routes = [{
 			{
 				path: "/roles",
 				component: Roles
-			}
+			},
+			{
+				path: "/categories",
+				component: Cate
+			},
 		]
 	},
 
