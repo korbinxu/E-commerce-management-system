@@ -6,6 +6,7 @@ import Users from "../views/user/Users"
 import Rights from "../views/power/Rights"
 import Roles from "../views/power/Roles"
 import Cate from '../views/goods/Cate';
+import Params from "../views/goods/Params"
 
 // 路由懒加载
 const Login = () => import("../views/login/Login.vue")
@@ -45,6 +46,10 @@ const routes = [{
 				path: "/categories",
 				component: Cate
 			},
+			{
+				path: "/params",
+				component: Params
+			}
 		]
 	},
 
