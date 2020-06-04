@@ -25,3 +25,8 @@ body,
 .el-pagination {
 	margin-top: 15px;
 }
+
+/* 富文本编辑器 */
+.ql-editor {
+	min-height: 200px;
+}
