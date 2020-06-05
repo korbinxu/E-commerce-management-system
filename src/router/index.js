@@ -1,20 +1,19 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Welcome from "../views/home/childrenComps/Welcome.vue"
-import Users from "../views/user/Users"
-import Rights from "../views/power/Rights"
-import Roles from "../views/power/Roles"
-import Cate from '../views/goods/Cate';
-import Params from "../views/goods/Params"
-import List from "../views/goods/List"
-import Add from "../views/goods/Add"
-import Order from "../views/order/Order"
-import Report from "../views/report/Report"
-
 // 路由懒加载
 const Login = () => import("../views/login/Login.vue")
 const Home = () => import("../views/home/Home.vue")
+const Welcome = () => import("../views/home/childrenComps/Welcome.vue")
+const Users = () => import("../views/user/Users")
+const Rights = () => import("../views/power/Rights")
+const Roles = () => import("../views/power/Roles")
+const Cate = () => import('../views/goods/Cate')
+const Params = () => import("../views/goods/Params")
+const List = () => import("../views/goods/List")
+const Add = () => import("../views/goods/Add")
+const Order = () => import("../views/order/Order")
+const Report = () => import("../views/report/Report")
 
 Vue.use(VueRouter)
 
@@ -78,14 +77,6 @@ const routes = [{
 const router = new VueRouter({
 	mode: "history",
 	routes
-})
-
-// 拦截导航守卫
-router.beforeEach((to, from, next) => {
-	if (to.path === "/login") return next()
-	const hasToken = window.sessionStorage.getItem("token")
-	if (!hasToken) return next("/login")
-	next()
 })
 
 export default router
