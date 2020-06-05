@@ -9,6 +9,7 @@ import Cate from '../views/goods/Cate';
 import Params from "../views/goods/Params"
 import List from "../views/goods/List"
 import Add from "../views/goods/Add"
+import Order from "../views/order/Order"
 
 // 路由懒加载
 const Login = () => import("../views/login/Login.vue")
@@ -59,6 +60,10 @@ const routes = [{
 			{
 				path: "/goods/add",
 				component: Add
+			},
+			{
+				path: "/orders",
+				component: Order
 			}
 		]
 	},

@@ -273,7 +273,7 @@ export default {
   margin-bottom: 20px;
 }
 
-/deep/.el-step__title {
+/deep/ .el-step__title {
   font-size: 14px;
 }
 
